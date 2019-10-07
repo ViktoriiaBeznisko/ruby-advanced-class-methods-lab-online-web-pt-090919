@@ -18,15 +18,15 @@ class Song
     song
   end
 
-  def self.new_by_name(name_of_a_song)
+  def self.new_by_name(name)
     song = self.new
-    song.name = name_of_a_song 
+    song.name = name
     song
   end
   
-  def self.create_by_name(name_of_a_song)
+  def self.create_by_name(name)
     song = self.new
-    song.name = name_of_a_song
+    song.name = name
     song.save
     song
   end
