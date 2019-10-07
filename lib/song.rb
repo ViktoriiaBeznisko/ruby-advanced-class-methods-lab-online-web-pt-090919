@@ -27,8 +27,8 @@ class Song
   def self.create_by_name(name_of_a_song)
   song = self.new
   song.name = name_of_a_song
-  s.save
-  s
+  song.save
+  song
   end
 
   def self.destroy_all
