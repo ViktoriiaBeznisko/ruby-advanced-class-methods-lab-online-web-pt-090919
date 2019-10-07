@@ -48,9 +48,13 @@ class Song
     end
   end
 
- def self.alphabetical
-   self.all.sort_by { |s| s.name } 
- end
+  def self.alphabetical
+    self.all.sort_by { |s| s.name } 
+  end
+  
+  def self.new_from_filename
+  end
+ 
 
   def self.destroy_all
     self.all.clear
