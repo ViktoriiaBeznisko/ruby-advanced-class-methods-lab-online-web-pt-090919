@@ -6,7 +6,9 @@ class Song
     @@all
   end
 
-  def initiaize
+  def initialize(name)
+    @name = name
+    @
 
   def save
     self.class.all << self
