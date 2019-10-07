@@ -55,6 +55,9 @@ class Song
   def self.new_from_filename(mp3_file)
     constructor = self.new
     constructor.name = mp3_file.split(/)
+    constructor.artist_name = mp3_file.split(/)
+    constructor.save
+    constructor
   end
  
 
