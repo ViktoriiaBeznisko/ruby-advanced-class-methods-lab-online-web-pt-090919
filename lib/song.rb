@@ -15,12 +15,16 @@ class Song
     song = self.new
     song.save
     song
-end
+  end
 
 def self.new_by_name(name_of_a_song)
     song = self.new
     song.name = name_of_a_song 
     song
+end
+
+def self.create_by_name
+  
 end
 
   def self.destroy_all
