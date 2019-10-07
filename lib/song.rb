@@ -13,8 +13,8 @@ class Song
 
 
   def self.create
- #   @name = name
- #   @@all << self
+ #   @Song.all = song
+ #   @Song.all << self
  # end
 
 
