@@ -53,6 +53,8 @@ class Song
   end
   
   def self.new_from_filename(mp3.file)
+    constructor = self.new
+    constructor.name = 
   end
  
 
