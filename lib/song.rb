@@ -49,7 +49,7 @@ class Song
   end
 
  def self.alphabetical
-   self.sort.all{ |a, b| b <=> a }
+   self.sort { |a, b| b <=> a }
  end
 
   def self.destroy_all
