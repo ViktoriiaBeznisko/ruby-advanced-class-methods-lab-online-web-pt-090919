@@ -32,7 +32,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    self.all.find{
+    self.all.find{|s|
   end
 
   def self.destroy_all
