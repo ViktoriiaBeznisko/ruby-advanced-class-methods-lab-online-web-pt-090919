@@ -35,6 +35,12 @@ class Song
     self.all.find{|s| s.name == name}
   end
 
+  self.find_or_create_by_name
+end
+
+
+
+
   def self.destroy_all
     self.all.clear
   end
