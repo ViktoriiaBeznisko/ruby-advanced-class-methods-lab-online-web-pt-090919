@@ -35,14 +35,11 @@ class Song
     self.all.find{|s| s.name == name}
   end
 
-  def self.find_or_create_by_name(find_this_song)
-    # This method will accept a string name for a song and 
-    # either return a matching song instance with that name 
-    # or create a new song with the name and return the song instance.
-    did_i_find_it = self.all.detect {|x| x.name == find_this_song}
+  def self.find_or_create_by_name(name)
+    did_i_find_it = self.all.detect {|x| x.name == name}
     if did_i_find_it == nil
       s = self.new 
-      s.name = find_this_song
+      s.name = name
       s.save 
       s
     else
