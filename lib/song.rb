@@ -55,7 +55,7 @@ class Song
   def self.new_from_filename(mp3_file)
     constructor = self.new
     constructor.name = mp3_file.split(/ [^a-zA-Z\s]|\s-\s/)[1]
-    constructor.artist_name = mp3_file.split(/)
+    constructor.artist_name = mp3_file.split(/ [^a-zA-Z\s]|\s-\s/)[0]
     constructor.save
     constructor
   end
