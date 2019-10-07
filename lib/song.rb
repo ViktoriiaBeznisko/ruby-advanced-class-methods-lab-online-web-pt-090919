@@ -52,9 +52,9 @@ class Song
     self.all.sort_by { |s| s.name } 
   end
   
-  def self.new_from_filename(mp3.file)
+  def self.new_from_filename(mp3_file)
     constructor = self.new
-    constructor.name = 
+    constructor.name = mp3_file.split(/)
   end
  
 
