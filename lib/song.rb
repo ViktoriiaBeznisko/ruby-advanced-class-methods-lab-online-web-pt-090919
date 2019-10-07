@@ -40,6 +40,7 @@ class Song
     if result == nill
       song = self.new
       song.name = name
+      song.save
       song
     else 
       result
